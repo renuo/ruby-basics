@@ -50,6 +50,7 @@ puts '---'
 
 # Whats confusing?
 t = { first_name: 'Simon' }
+puts t
 puts '---'
 
 # Which is the right choice?
