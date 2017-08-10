@@ -51,8 +51,8 @@ end
 
 # This is often used in Rails for option parameters and can be confusing
 some_method 'Hello', 'b', first: 'abc', second: '123'
-# this is the same as this:
-some_method 'Hello', 'b', { first: 'abc', second: '123' }
+# this is the same as this, but would be removed from rubocop:
+# some_method 'Hello', 'b', { first: 'abc', second: '123' }
 puts '---'
 # Would that also work?
 # some_method 'Hello', first: 'abc', second: '123', 'World'
@@ -71,8 +71,8 @@ puts t[:first_name]
 puts t['first_name']
 
 # How can i define a hash to call it like that? `puts t['first_name']`
-t2 = {'first_name': 'Simon'}
-t3 = {'first_name' => 'Simon'}
+t2 = { 'first_name': 'Simon' }
+t3 = { 'first_name' => 'Simon' }
 # {'first_name'.to_sym => 'Simon'} would be same as t2
 # { %(first_name) => 'Simon'} would be same as t2
 puts 'xx------'
