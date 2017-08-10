@@ -1,14 +1,14 @@
 class Food
-  attr_reader :weight
   attr_accessor :what
+  attr_reader :weight
 
   def initialize(what, weight, cals)
-    @itisa = what
+    @what = what
     @weight = weight
     @calories = cals
     # puts self.calories does not work because getter is not defined
     puts self.weight
-    # puts self.getcalories # this is a redundant self
+    # getcalories # this is a redundant self
   end
 
   def getcalories
